@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import profile from '../assets/profile.webp'
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import { Link } from 'react-router-dom';
 interface ILoginProps {
 }
 
@@ -20,11 +21,11 @@ const Login: React.FunctionComponent<ILoginProps> = (props) => {
                         <span className='text-xl pt-2 font-sm'>Recent logins</span>
                         <span className='text-xs text-slate-500'>click your picture or add an account</span>
                         <div className='pt-4 flex gap-4'>
-                            <div className='cursor-pointer'>
+                            <Link className='cursor-pointer' to="/homepage" state={{ name: "Nirajan Malla Thakuri" }}>
                                 <img src={profile} alt="profile picture" className='h-40 w-40 rounded-t-md' />
                                 <div className='text-center text-lg rounded-b-md px-4 py-2 border-2 bg-white'>Nirajan</div>
-                            </div>
-                            <div className='cursor-pointer'>
+                            </Link>
+                            <div className='cursor-pointer' onClick={() => { alert("ta hero bandai xas, esto vetxas") }}>
                                 <div className='h-40 w-40 rounded-t-md border-2 flex justify-center items-center'><AddCircleIcon color='primary' fontSize='large' /></div>
                                 <div className='text-center text-blue-500 text-lg rounded-b-md px-4 py-2 border-2 bg-white'>Add account</div>
                             </div>
