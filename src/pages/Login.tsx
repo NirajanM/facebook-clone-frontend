@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import profile from '../assets/profile.webp'
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 interface ILoginProps {
 }
 
@@ -9,6 +9,7 @@ const Login: React.FunctionComponent<ILoginProps> = (props) => {
     const [toogleType, setToogleType] = useState<boolean>(true);
     const [uID, setUID] = useState<string>("");
     const [pwd, setPwd] = useState<string>("");
+    const navigate = useNavigate();
     let dt = new Date();
     return (
         <>
@@ -71,6 +72,12 @@ const Login: React.FunctionComponent<ILoginProps> = (props) => {
                             name="uid"
                             placeholder='Mobile number or email'
                             className='bg-blue-500 text-sm text-white font-black rounded-md py-2 px-4 w-full'
+                            onClick={
+                                (e) => {
+                                    e.preventDefault();
+                                    navigate("/homepage");
+                                }
+                            }
                         >Log in</button>
 
                         <span
@@ -82,9 +89,6 @@ const Login: React.FunctionComponent<ILoginProps> = (props) => {
                         <div
                             className='w-full px-8'>
                             <button
-                                type={'submit'}
-                                name="uid"
-                                placeholder='Mobile number or email'
                                 className=' font-sm text-xs border-2 rounded-md border-slate-300 py-2 px-3 w-full overflow-x-hidden whitespace-nowrap'
                                 onClick={() => { alert("any random username and password will work") }}
                             >Create new account</button></div>

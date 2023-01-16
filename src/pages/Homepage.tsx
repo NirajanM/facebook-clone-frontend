@@ -6,7 +6,9 @@ interface IHomepageProps {
 const Homepage: React.FunctionComponent<IHomepageProps> = (props) => {
     return (
         <div>
-            this is home page
+            <header className='font-black text-2xl text-blue-600'>
+                facebook
+            </header>
         </div>
     );
 };
