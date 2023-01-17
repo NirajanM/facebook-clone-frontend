@@ -11,7 +11,7 @@ const Stories: React.FunctionComponent<IStoriesProps> = (props) => {
                 <img src={Profile} alt="profile" height={28} className="rounded-t-xl" />
                 <div className="flex flex-col items-center">
                     <AddCircleIcon color="primary" className="border-2 bg-white border-white rounded-full" id="circle" />
-                    <span className="px-4 pb-8 font-black text-xs text-slate-800">Add to story</span>
+                    <span className="px-4 font-black text-xs text-slate-800">Add to story</span>
                 </div>
             </div>
         </div>
