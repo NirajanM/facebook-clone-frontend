@@ -3,6 +3,7 @@ import Profile from "../assets/profile.webp";
 import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import PhotoSizeSelectActualIcon from '@mui/icons-material/PhotoSizeSelectActual';
+import Stories from './Stories';
 interface INewsfeedProps {
 }
 
@@ -54,6 +55,7 @@ const Newsfeed: React.FunctionComponent<INewsfeedProps> = (props) => {
                     <span className='text-xs'>Photo</span>
                 </div>
             </div>
+            <Stories />
         </>
     );
 };
