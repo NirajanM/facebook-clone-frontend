@@ -22,7 +22,7 @@ const Login: React.FunctionComponent<ILoginProps> = (props) => {
                         <span className='text-xl pt-2 font-sm'>Recent logins</span>
                         <span className='text-xs text-slate-500'>click your picture or add an account</span>
                         <div className='pt-4 flex gap-4'>
-                            <Link className='cursor-pointer' to="/homepage" state={{ name: "Nirajan Malla Thakuri" }}>
+                            <Link className='cursor-pointer' to="/homepage">
                                 <img src={profile} alt="profile picture" className='h-40 w-40 rounded-t-md' />
                                 <div className='text-center text-lg rounded-b-md px-4 py-2 border-2 bg-white'>Nirajan</div>
                             </Link>

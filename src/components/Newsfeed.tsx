@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import PhotoSizeSelectActualIcon from '@mui/icons-material/PhotoSizeSelectActual';
 import Stories from './Stories';
+import UsersPost from './UsersPost';
 interface INewsfeedProps {
 }
 
@@ -56,6 +57,7 @@ const Newsfeed: React.FunctionComponent<INewsfeedProps> = (props) => {
                 </div>
             </div>
             <Stories />
+            <UsersPost />
         </>
     );
 };
