@@ -3,6 +3,9 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import ThumbUpAltOutlinedIcon from '@mui/icons-material/ThumbUpAltOutlined';
+import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
+import ShortcutOutlinedIcon from '@mui/icons-material/ShortcutOutlined';
 
 interface IUsersPostProps {
 }
@@ -80,7 +83,16 @@ const UsersPost: React.FunctionComponent<IUsersPostProps> = (props) => {
 
           <div className='px-2 pt-3 text-xs text-black font-light'>
             <span>Maile ta Anuharbook garey, tapaile ni ?</span>
-            <img src='' />
+          </div>
+
+          <img src='' className='w-full' />
+          <div className="px-2">
+          </div>
+
+          <div className='flex gap-2 px-2 py-2 border-y my-2'>
+            <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'><ThumbUpAltOutlinedIcon color='action' fontSize='small' />{123 + 24 + 10}</span>
+            <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'><ChatBubbleOutlineOutlinedIcon color='action' fontSize='small' />12</span>
+            <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'><ShortcutOutlinedIcon color='action' fontSize='small' />24</span>
           </div>
         </div>
       </div>
