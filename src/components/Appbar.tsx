@@ -8,7 +8,7 @@ export default function SearchAppBar() {
                 facebook
             </span>
             <div className='flex gap-2'>
-                <SearchIcon className='rounded-full bg-slate-200 p-1' fontSize='large' />
+                <SearchIcon className='rounded-full bg-slate-200 p-1' fontSize='large' onClick={() => { alert("xaina data kei xaddeu") }} />
                 <MenuIcon fontSize='large' className='rounded-full bg-slate-200 p-1' />
             </div>
         </div>
