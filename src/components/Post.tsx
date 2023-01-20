@@ -1,4 +1,4 @@
-
+import { useState } from "react"
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -30,6 +30,7 @@ const Post: React.FunctionComponent<IPostProps> = (props) => {
     const handleClose = () => {
         setAnchorEl(null);
     };
+    const [liked, setLiked] = useState<boolean>(false);
     return (
         <div>
 
@@ -83,9 +84,15 @@ const Post: React.FunctionComponent<IPostProps> = (props) => {
             </div>
 
             <div className='flex gap-2 px-2 py-2 border-y my-2'>
-                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'><ThumbUpAltOutlinedIcon color='action' fontSize='small' />{props.reaction[0] + props.reaction[1] + props.reaction[2]}k</span>
-                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'><ChatBubbleOutlineOutlinedIcon color='action' fontSize='small' />{props.comments}k</span>
-                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'><ShortcutOutlinedIcon color='action' fontSize='small' />{props.share}k</span>
+                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'
+                    onClick={() => { setLiked(!liked) }}
+                ><ThumbUpAltOutlinedIcon color={liked ? "primary" : "action"} fontSize='small' />{props.reaction[0] + props.reaction[1] + props.reaction[2]}k</span>
+                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'
+                    onClick={() => { alert("kasle garxa yar comment?") }}
+                ><ChatBubbleOutlineOutlinedIcon color='action' fontSize='small' />{props.comments}k</span>
+                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'
+                    onClick={() => { alert("kasle herxa share garera chai?") }}
+                ><ShortcutOutlinedIcon color='action' fontSize='small' />{props.share}k</span>
             </div>
         </div>
     );

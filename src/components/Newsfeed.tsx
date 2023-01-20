@@ -48,7 +48,9 @@ const Newsfeed: React.FunctionComponent<INewsfeedProps> = (props) => {
                 >
                     <Avatar alt="Remy Sharp" src={Profile} sizes="sm" />
                 </StyledBadge>
-                <button className='rounded-full px-4 py-1 bg-slate-200 text-sm font-medium w-full text-start'>
+                <button className='rounded-full px-4 py-1 bg-slate-200 text-sm font-medium w-full text-start'
+                    onClick={() => { alert("timro mind mai rahana deu aile lai") }}
+                >
                     What's on your mind?
                 </button>
                 <div className='flex flex-col items-center' >
