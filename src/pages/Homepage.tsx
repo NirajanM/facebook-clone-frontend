@@ -38,21 +38,30 @@ const Homepage: React.FunctionComponent<IHomepageProps> = () => {
                         <ChatBubbleOutlineIcon color={(activeNav === 3) ? "primary" : "action"} />
                     </Badge>
                 </Link>
-                <Link to="/entertainments">
-                    <Badge badgeContent={3} color="primary" max={20} onClick={() => { setActiveNav(4) }}>
-                        <OndemandVideoIcon color={(activeNav === 4) ? "primary" : "action"} />
-                    </Badge>
-                </Link>
-                <Link to="/notifications">
-                    <Badge badgeContent={22} color="primary" max={20} onClick={() => { setActiveNav(5) }}>
-                        <NotificationsNoneIcon color={(activeNav === 5) ? "primary" : "action"} />
-                    </Badge>
-                </Link>
-                <Link to="/groups">
-                    <Badge badgeContent={6} color="primary" max={20} onClick={() => { setActiveNav(6) }}>
-                        <GroupsIcon color={(activeNav === 6) ? "primary" : "action"} className="rounded-full border border-slate-500" />
-                    </Badge>
-                </Link>
+                {/* <Link to="/entertainments"> */}
+                <Badge badgeContent={3} color="primary" max={20} onClick={() => {
+                    // setActiveNav(4)
+                    alert("not coded!")
+                }}>
+                    <OndemandVideoIcon color={(activeNav === 4) ? "primary" : "disabled"} />
+                </Badge>
+                {/* </Link>
+                <Link to="/notifications"> */}
+                <Badge badgeContent={22} color="primary" max={20} onClick={() => {
+                    // setActiveNav(5)
+                    alert("not coded!")
+                }}>
+                    <NotificationsNoneIcon color={(activeNav === 5) ? "primary" : "disabled"} />
+                </Badge>
+                {/* </Link>
+                <Link to="/groups"> */}
+                <Badge badgeContent={6} color="primary" max={20} onClick={() => {
+                    //  setActiveNav(6) 
+                    alert("not coded!")
+                }}>
+                    <GroupsIcon color={(activeNav === 6) ? "primary" : "disabled"} className="rounded-full border border-slate-500" />
+                </Badge>
+                {/* </Link> */}
             </nav>
             <Routes>
                 <Route path="homepage" element={<Newsfeed />} />
