@@ -29,7 +29,7 @@ const Homepage: React.FunctionComponent<IHomepageProps> = () => {
                     </Badge>
                 </Link>
                 <Link to="/friendrequests">
-                    <Badge badgeContent={8} color="primary" max={20} onClick={() => { setActiveNav(2) }}>
+                    <Badge badgeContent={3} color="primary" max={20} onClick={() => { setActiveNav(2) }}>
                         <PersonAddOutlinedIcon color={(activeNav === 2) ? "primary" : "action"} />
                     </Badge>
                 </Link>

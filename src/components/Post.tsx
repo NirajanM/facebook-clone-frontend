@@ -79,18 +79,20 @@ const Post: React.FunctionComponent<IPostProps> = (props) => {
                 <span>{props.caption}</span>
             </div>
 
-            <img src={props.postImage} className='w-full' />
+            <a href={props.postImage}>
+                <img src={props.postImage} className='w-full' />
+            </a>
             <div className="px-2">
             </div>
 
             <div className='flex gap-2 px-2 py-2 border-y my-2'>
-                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'
+                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full cursor-pointer w-full bg-slate-200'
                     onClick={() => { setLiked(!liked) }}
                 ><ThumbUpAltOutlinedIcon color={liked ? "primary" : "action"} fontSize='small' />{props.reaction[0] + props.reaction[1] + props.reaction[2]}k</span>
-                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'
+                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full cursor-pointer w-full bg-slate-200'
                     onClick={() => { alert("kasle garxa yar comment?") }}
                 ><ChatBubbleOutlineOutlinedIcon color='action' fontSize='small' />{props.comments}k</span>
-                <span className='flex justify-center gap-1 items-center py-1 text-xs rounded-full w-full bg-slate-200'
+                <span className='flex justify-center gap-1 items-center py-1 cursor-pointer text-xs rounded-full w-full bg-slate-200'
                     onClick={() => { alert("kasle herxa share garera chai?") }}
                 ><ShortcutOutlinedIcon color='action' fontSize='small' />{props.share}k</span>
             </div>
