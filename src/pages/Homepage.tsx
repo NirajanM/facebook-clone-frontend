@@ -20,7 +20,7 @@ interface IHomepageProps {
 const Homepage: React.FunctionComponent<IHomepageProps> = () => {
     const [activeNav, setActiveNav] = useState<number>(1);
     return (
-        <div>
+        <div className='max-w-xl m-auto'>
             <Appbar />
             <nav className="flex py-3 border border-slate-200 justify-around w-full">
                 <Link to="/homepage">

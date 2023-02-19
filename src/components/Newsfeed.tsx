@@ -40,7 +40,7 @@ const Newsfeed: React.FunctionComponent<INewsfeedProps> = (props) => {
 
     return (
         <>
-            <div className='flex px-3 py-3 justify-between gap-3'>
+            <div className='flex px-3 py-3 justify-between gap-3 max-w-xl m-auto'>
                 <StyledBadge
                     overlap="circular"
                     anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}

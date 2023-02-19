@@ -32,7 +32,7 @@ const Post: React.FunctionComponent<IPostProps> = (props) => {
     };
     const [liked, setLiked] = useState<boolean>(false);
     return (
-        <div>
+        <div className="my-8 rounded-lg max-w-xl m-auto">
 
 
             <div className='flex justify-between gap-2 px-2 text-xs font-black text-slate-800'>
@@ -80,7 +80,7 @@ const Post: React.FunctionComponent<IPostProps> = (props) => {
             </div>
 
             <a href={props.postImage}>
-                <img src={props.postImage} className='w-full' />
+                <img src={props.postImage} className='w-full max-w-xl m-auto' />
             </a>
             <div className="px-2">
             </div>

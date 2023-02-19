@@ -69,7 +69,7 @@ const Stories: React.FunctionComponent<IStoriesProps> = (props) => {
         }
     ]
     return (
-        <div className='flex overflow-x-auto text-center gap-2 border-y-4 border-slate-300 p-2 '>
+        <div className='max-w-xl m-auto flex overflow-x-auto text-center gap-2 border-y-4 border-slate-300 p-2 '>
             <div className='text-center flex-shrink-0 overflow-hidden h-40 rounded-xl border-2 w-24'>
                 <img src={Profile} alt="profile" height={28} />
                 <div className="flex flex-col items-center">
