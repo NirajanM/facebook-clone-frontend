@@ -24,10 +24,6 @@ const Stories: React.FunctionComponent<IStoriesProps> = (props) => {
             name: "Cristiano Ronaldo"
         },
         {
-            image: "https://images.squarespace-cdn.com/content/v1/5e39d446a7489b0a77ea11d7/1634329221679-6TV3ZVN4R7FPB3D6LASM/more+noise+tour+flyer+EU+VERTICAL+V1.png?format=1500w",
-            name: "Jeremy Zucker"
-        },
-        {
             image: "https://i.pinimg.com/originals/ee/c6/14/eec61400296af8ca7e3c9a80f71dc7ac.jpg",
             name: "Sadhguru"
         },

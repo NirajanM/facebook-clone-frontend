@@ -32,7 +32,7 @@ const Post: React.FunctionComponent<IPostProps> = (props) => {
     };
     const [liked, setLiked] = useState<boolean>(false);
     return (
-        <div className="my-8 rounded-lg max-w-xl m-auto">
+        <div className="mt-2 mb-4 rounded-lg max-w-xl m-auto">
 
 
             <div className='flex justify-between gap-2 px-2 text-xs font-black text-slate-800'>
