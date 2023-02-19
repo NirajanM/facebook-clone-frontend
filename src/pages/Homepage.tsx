@@ -33,11 +33,13 @@ const Homepage: React.FunctionComponent<IHomepageProps> = () => {
                         <PersonAddOutlinedIcon color={(activeNav === 2) ? "primary" : "action"} />
                     </Badge>
                 </Link>
-                <Link to="/messages">
-                    <Badge badgeContent={2} color="primary" max={20} onClick={() => { setActiveNav(3) }}>
-                        <ChatBubbleOutlineIcon color={(activeNav === 3) ? "primary" : "action"} />
-                    </Badge>
-                </Link>
+
+                <Badge badgeContent={2} color="primary" max={20} onClick={() => {
+                    alert("not coded!")
+                }}>
+                    <ChatBubbleOutlineIcon color="disabled" />
+                </Badge>
+
                 {/* <Link to="/entertainments"> */}
                 <Badge badgeContent={3} color="primary" max={20} onClick={() => {
                     // setActiveNav(4)
